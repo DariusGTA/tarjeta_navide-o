@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/tarjeta-navideña/navidad4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.tarjeta {
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.arbol {
+    position: relative;
+}
+
+.arbol-navideno {
+    font-family: monospace;
+    white-space: pre;
+    color: #1eff00;
+    margin-top: 10px;
+    line-height: 1.1;
+}
+
+.mensaje h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+@keyframes brillar {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moverArbol {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.feliz-navidad {
+    animation: moverfeliz 2s ease-in-out infinite;
+}
+
+.arbol-navideno {
+    animation: moverArbol 2s ease-in-out infinite;
+}
